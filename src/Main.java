@@ -70,6 +70,20 @@ public class Main {
         System.out.println("Завтрак в килограммах равен " + totalWeightKg);
 
         //Задача 7
+        short target = 7;
+        target = 7 * 1000;
+        short weightLoss1 = 250;
+        short weightLoss2 = 500;
+        int target250 = target / weightLoss1;
+        int target500 = target / weightLoss2;
+        System.out.println(target250 + " дней нужно для потери 7 кг по 250 грамм");
+        System.out.println(target500 + " дней нужно для потери 7 кг по 500 грамм");
+
+        //Задача 8
+        int masha = 67760;
+        int denis = 83690;
+        int kristina = 76230;
+
 
 
     }
