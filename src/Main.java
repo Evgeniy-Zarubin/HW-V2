@@ -51,8 +51,26 @@ public class Main {
         byte whiteJar = 2;
         byte brownJar = 4;
         int allClassJar = allJars / (whiteJar + brownJar);
-        int white = allClassJar / whiteJar;
-        int brown = allClassJar / brownJar;
+        int white = allClassJar * whiteJar;
+        int brown = allClassJar * brownJar;
         System.out.println("В школе, где " + allClassJar + " классов, нужно " + white + " банок белой краски и " + brown + " банок коричневой краски");
+
+        //Задача 6
+        byte bananas = 5;
+        byte bananasWeight = 80;
+        short milk = 200;
+        byte milkWeight = 105;
+        byte iceCream = 2;
+        byte iceCreamWeight = 100;
+        byte eggs = 4;
+        byte eggsWeight = 70;
+        int totalWeightGm =  bananas * bananasWeight + milk/100 * milkWeight + iceCream * iceCreamWeight + eggs * eggsWeight;
+        float totalWeightKg = totalWeightGm / 1000f;
+        System.out.println("Завтрак в граммах равен " + totalWeightGm);
+        System.out.println("Завтрак в килограммах равен " + totalWeightKg);
+
+        //Задача 7
+
+
     }
 }
