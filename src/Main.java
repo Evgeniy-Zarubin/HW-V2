@@ -16,11 +16,11 @@ public class Main {
 
         //Задача 2
         float palletQuantity = 27.12f;
-        // long warehouseRemains = 987 678 965 549L;
-        //double weight = 2,768;
+        long warehouseRemains = 987678965549L;
+        double L = 2.786;
         short employers = 569;
         short money = -159;
-        int moneyFot = 27897;
+        short moneyFot = 27897;
         byte container = 67;
 
         //Задача 3
@@ -28,11 +28,11 @@ public class Main {
         byte annaSergeevna = 27;
         byte ekaterinaAndreevna = 30;
         short listPackage = 480;
-        int listForStudents = listPackage * 3 / (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
+        int listForStudents = listPackage / (ludmilaPavlovna + annaSergeevna + ekaterinaAndreevna);
         System.out.println("На каждого ученика рассчитано " + listForStudents + " листов бумаги");
 
         //Задача 4
-        byte machinePerformance = 16;
+        byte machinePerformance = 16 / 2;
         byte performance1 = 20;
         short performanceDay = 1440;
         short performanceDay3 = 4320;
@@ -64,7 +64,7 @@ public class Main {
         byte iceCreamWeight = 100;
         byte eggs = 4;
         byte eggsWeight = 70;
-        int totalWeightGm =  bananas * bananasWeight + milk/100 * milkWeight + iceCream * iceCreamWeight + eggs * eggsWeight;
+        int totalWeightGm = bananas * bananasWeight + milk / 100 * milkWeight + iceCream * iceCreamWeight + eggs * eggsWeight;
         float totalWeightKg = totalWeightGm / 1000f;
         System.out.println("Завтрак в граммах равен " + totalWeightGm);
         System.out.println("Завтрак в килограммах равен " + totalWeightKg);
@@ -83,8 +83,14 @@ public class Main {
         int masha = 67760;
         int denis = 83690;
         int kristina = 76230;
-
-
-
+        int indexingMasha = masha * 10/100 + masha;
+        int indexingDenis = denis * 10/100 + denis;
+        int indexingKristina = kristina * 10/100 + kristina;
+        int ReduceMasha = indexingMasha * 12 - masha * 12;
+        int ReduceDenis = indexingDenis * 12 - denis * 12;
+        int ReduceKristina = indexingKristina * 12 - kristina * 12;
+        System.out.println("Маша теперь получает " + indexingMasha + " рублей. " + "Годовой доход вырос на " + ReduceMasha + " рублей"  );
+        System.out.println("Денис теперь получает " + indexingDenis + " рублей. " + "Годовой доход вырос на " + ReduceDenis + " рублей"  );
+        System.out.println("Кристина теперь получает " + indexingKristina + " рублей. " + "Годовой доход вырос на " + ReduceKristina + " рублей"  );
     }
 }
